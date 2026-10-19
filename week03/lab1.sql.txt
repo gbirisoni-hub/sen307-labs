@@ -1,0 +1,79 @@
+
+mysql> SELECT VERSION();
++-----------+
+| VERSION() |
++-----------+
+| 26.7.0    |
++-----------+
+1 row in set (0.014 sec)
+
+
+mysql> SELECT CURRENT_USER();
++----------------+
+| CURRENT_USER() |
++----------------+
+| root@localhost |
++----------------+
+1 row in set (0.011 sec)
+
+mysql> SELECT NOW();
++---------------------+
+| NOW()               |
++---------------------+
+| 2026-10-19 22:42:08 |
++---------------------+
+1 row in set (0.010 sec)
+
+
+mysql> STATUS;
+--------------
+mysql  Ver 26.7.0 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+Connection id:          14
+Current database:
+Current user:           root@localhost
+SSL:                    Cipher in use is TLS_AES_128_GCM_SHA256
+Using delimiter:        ;
+Server version:         26.7.0 MySQL Community Server - GPL
+Protocol version:       10
+Connection:             localhost via TCP/IP
+Server characterset:    utf8mb4
+Db     characterset:    utf8mb4
+Client characterset:    cp850
+Conn.  characterset:    cp850
+TCP port:               3306
+Binary data as:         Hexadecimal
+Uptime:                 2 hours 16 min 35 sec
+
+Threads: 7  Questions: 60  Slow queries: 0  Opens: 243  Flush tables: 3  Open tables: 159  Queries per second avg: 0.007
+--------------
+
+mysql> SHOW VARIABLES LIKE 'port';
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| port          | 3306  |
++---------------+-------+
+1 row in set (0.080 sec)
+
+mysql> SELECT DATABASE();
++------------+
+| DATABASE() |
++------------+
+| NULL       |
++------------+
+1 row in set (0.008 sec)
+
+mysql> USE sen307_12154;
+Database changed
+
+mysql> SELECT DATABASE();
++--------------+
+| DATABASE()   |
++--------------+
+| sen307_12154 |
++--------------+
+1 row in set (0.008 sec)
+
+mysql> SHOW TABLES;
+Empty set (0.066 sec)
