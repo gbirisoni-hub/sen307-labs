@@ -1,0 +1,14 @@
+GBIRISON IYIMIDE GABRIEL
+12154
+LAB 4 NOTES
+
+
+
+During Part 4 of the practical, I encountered Error 1451 when I attempted to delete the Library and Information Science department.
+ MySQL refused because a student record still referenced that department through the foreign key in the Student table. 
+This restriction protects referential integrity by preventing the deletion of a parent record that is still being used by another table.
+ I fixed the issue by updating the student's department to Software Engineering before deleting the Library and Information Science department.
+ Another possible solution would be to use the ON DELETE CASCADE option when defining the foreign key, which would automatically delete dependent
+ stud
+
+	
